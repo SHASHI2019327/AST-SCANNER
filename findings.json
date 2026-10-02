@@ -1,0 +1,98 @@
+[
+  {
+    "algorithm": "SHA-256",
+    "family": "SHA-2",
+    "type": "hash",
+    "keySize": null,
+    "mode": null,
+    "operation": "hash",
+    "api": "crypto.createHash",
+    "library": "Node.js crypto",
+    "file": "src\\hash.js",
+    "line": 6
+  },
+  {
+    "algorithm": "HMAC-SHA-256",
+    "family": "HMAC",
+    "type": "message-authentication",
+    "keySize": null,
+    "mode": null,
+    "operation": "authentication",
+    "api": "crypto.createHmac",
+    "library": "Node.js crypto",
+    "file": "src\\hmac.js",
+    "line": 6
+  },
+  {
+    "algorithm": "HMAC-SHA-256",
+    "family": "HMAC",
+    "type": "message-authentication",
+    "keySize": null,
+    "mode": null,
+    "operation": "authentication",
+    "api": "crypto.createHmac",
+    "library": "Node.js crypto",
+    "file": "src\\hmac.js",
+    "line": 11
+  },
+  {
+    "algorithm": "RSA",
+    "family": "RSA",
+    "type": "public-key",
+    "keySize": 2048,
+    "mode": null,
+    "operation": "key-generation",
+    "api": "crypto.generateKeyPairSync",
+    "library": "Node.js crypto",
+    "file": "src\\keypair.js",
+    "line": 3
+  },
+  {
+    "algorithm": "rsa-sha256",
+    "family": "signature",
+    "type": "digital-signature",
+    "keySize": null,
+    "mode": null,
+    "operation": "sign",
+    "api": "crypto.createSign",
+    "library": "Node.js crypto",
+    "file": "src\\sign.js",
+    "line": 8
+  },
+  {
+    "algorithm": "rsa-sha256",
+    "family": "signature",
+    "type": "digital-signature",
+    "keySize": null,
+    "mode": null,
+    "operation": "verify",
+    "api": "crypto.createVerify",
+    "library": "Node.js crypto",
+    "file": "src\\sign.js",
+    "line": 17
+  },
+  {
+    "algorithm": "aes256",
+    "family": "unknown",
+    "type": "symmetric-encryption",
+    "keySize": null,
+    "mode": null,
+    "operation": "encrypt",
+    "api": "crypto.createCipheriv",
+    "library": "Node.js crypto",
+    "file": "src\\symmetric-encrypt.js",
+    "line": 9
+  },
+  {
+    "algorithm": "aes256",
+    "family": "unknown",
+    "type": "symmetric-encryption",
+    "keySize": null,
+    "mode": null,
+    "operation": "decrypt",
+    "api": "crypto.createDecipheriv",
+    "library": "Node.js crypto",
+    "file": "src\\symmetric-encrypt.js",
+    "line": 18
+  }
+]

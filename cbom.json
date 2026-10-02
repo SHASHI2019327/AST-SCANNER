@@ -1,0 +1,128 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:f16d6c91-2435-4efb-a9e7-37abf9fd5147",
+  "version": 1,
+  "components": [
+    {
+      "type": "cryptographic-asset",
+      "name": "SHA-256",
+      "bom-ref": "crypto/algorithm/sha-256",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "hash",
+          "cryptoFunctions": [
+            "digest"
+          ]
+        }
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "src\\hash.js:6"
+          }
+        ]
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "name": "HMAC-SHA-256",
+      "bom-ref": "crypto/algorithm/hmac-sha-256",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "mac",
+          "cryptoFunctions": [
+            "tag"
+          ]
+        }
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "src\\hmac.js:6"
+          },
+          {
+            "location": "src\\hmac.js:11"
+          }
+        ]
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "name": "RSA",
+      "bom-ref": "crypto/algorithm/rsa",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "pke",
+          "parameterSetIdentifier": "2048",
+          "cryptoFunctions": [
+            "keygen"
+          ]
+        }
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "src\\keypair.js:3"
+          }
+        ]
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "name": "rsa-sha256",
+      "bom-ref": "crypto/algorithm/rsa-sha256",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "unknown",
+          "cryptoFunctions": [
+            "unknown"
+          ]
+        }
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "src\\sign.js:8"
+          },
+          {
+            "location": "src\\sign.js:17"
+          }
+        ]
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "name": "aes256",
+      "bom-ref": "crypto/algorithm/aes256",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "ae",
+          "executionEnvironment": "software-plain-ram",
+          "implementationPlatform": "unknown",
+          "certificationLevel": [
+            "none"
+          ],
+          "cryptoFunctions": [
+            "encrypt"
+          ]
+        }
+      },
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "src\\symmetric-encrypt.js:9"
+          },
+          {
+            "location": "src\\symmetric-encrypt.js:18"
+          }
+        ]
+      }
+    }
+  ]
+}
